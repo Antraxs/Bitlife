@@ -1,0 +1,11 @@
+Package: com.elantraxs.bitlife
+Name: BitLife - Life Simulator Cheats
+Depends: mobilesubstrate, preferenceloader
+Version: 1.16.2
+Architecture: iphoneos-arm
+Description: BitLife - Life Simulator Cheats Made By: El Antraxs. Made For iOSGods.com!
+Maintainer: El Antraxs
+Author: El Antraxs
+Section: Tweaks
+Homepage: https://iosgods.com
+Icon: file:///Library/PreferenceBundles/Bitlife.bundle/Bitlife@2x.png
