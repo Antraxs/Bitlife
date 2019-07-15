@@ -512,6 +512,218 @@ return TRUE;
 
 %end
 
+%hook Apollo16MiniGameDataBurglary
+
+-(bool)caughtByCop {
+
+return FALSE;
+
+}
+
+-(bool) caughtByDog {
+
+return FALSE;
+
+}
+
+-(bool) caughtByHomeowner {
+
+return FALSE;
+
+}
+
+-(bool) homeOwnerPresent {
+
+return FALSE;
+
+}
+
+-(int) numCops {
+
+return 0;
+
+}
+
+(int) numDogs {
+
+return 0;
+
+}
+
+%end
+
+%hook Apollo16SimThirdPersonScript
+
+-(bool) willGetFirstJobWithoutGoingToUniversityNextYear {
+
+return TRUE;
+
+}
+
+%end
+
+%hook Apollo16AchievementData {
+
+-(bool) mEarned {
+
+return TRUE;
+
+%end
+
+%hook Apollo16DataHookupFeedback
+
+-(int) minRegret {
+
+return 0;
+
+}
+
+-(int) maxRegret {
+
+return 0;
+
+}
+-(bool) clean {
+
+return TRUE;
+
+%end
+
+%hook Apollo16SimDataCareer
+
+-(bool) requiresCleanCriminalRecord {
+
+return FALSE;
+
+}
+
+-(bool) hasDrugTests {
+
+return FALSE;
+
+}
+
+-(int) minIntelligence {
+
+return 1;
+
+}
+
+%end
+
+%hook Apoloo16DataPetType
+
+-(bool) canBeWalked {
+
+return TRUE;
+
+}
+
+-(bool) pureBred {
+
+return TRUE;
+
+}
+
+-(bool) exotic {
+
+return TRUE;
+
+}
+
+-(bool) canBeDisciplined {
+
+return TRUE;
+
+}
+
+-(int) dangerScore {
+
+return 0;
+
+}
+
+-(int) intelligenceScore {
+
+return 100;
+
+}
+
+-(int) obedienceScore {
+
+return 100;
+
+}
+
+-(int) animalFoundAfterEscapeProbability {
+
+return 100;
+
+}
+
+%end
+
+%hook Apollo16SimPetDisease
+
+-(bool) revealedByVet {
+
+return TRUE;
+
+}
+
+-(int) yearSuffered {
+
+return 0;
+
+}
+
+$end
+
+%hook Apollo16DataDiscipline
+
+-(bool) petTalks {
+
+return TRUE;
+
+}
+
+-(int) petCrazinessScore {
+
+return 0;
+
+}
+
+-(bool) clean {
+
+return TRUE;
+
+}
+
+%end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%end
+
 // Automatic Popup Code
 void setup() {
     UIAlertController *igcredits = [UIAlertController alertControllerWithTitle:@"Made for iOSGods.com" message:@"El Antraxs Cheats by El Antraxs for iOSGods.com!\n\nVisit the hack's official topic on iOSGods for more information and updates!" preferredStyle:UIAlertControllerStyleAlert];
