@@ -679,7 +679,7 @@ return 0;
 
 $end
 
-%hook Apollo16DataDiscipline
+%hook Apollo16DataPetDiscipline
 
 -(bool) petTalks {
 
@@ -701,6 +701,49 @@ return TRUE;
 
 %end
 
+%hook Apollo16SimBookOpportunity 
+
+-(float) getCostAmount {
+
+return 0;
+
+}
+
+-(float)getProceedsAmount {
+
+return 10000000;
+
+}
+
+-(Float) cost {
+
+return 50;
+
+}
+
+%end
+
+%hook Apollo16SimDeath
+
+-(int) ageAtDeath {
+
+return 120;
+
+}
+
+-(bool) diedAHero {
+
+return TRUE;
+
+}
+
+-(bool) isDeathTypeFailedRescue {
+
+return FALSE;
+
+}
+
+%end
 
 
 
