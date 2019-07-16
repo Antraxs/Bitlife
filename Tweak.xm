@@ -745,25 +745,183 @@ return FALSE;
 
 %end
 
+%hook Apollo16SimPlace
 
+-(bool) willPermitHeroToEmigrate {
 
+return TRUE;
 
+}
 
+-(float) CostToEmigrate {
 
+return 0;
 
+}
 
+%end
 
+%hook Apollo16PlasticSurgery
 
+-(int) successScore {
 
+return 100;
 
+}
 
+-(bool) heroIsEligible {
 
+return TRUE;
 
+}
 
+-(int) dangerScore {
 
+return 0;
 
+}
 
+-(int) maxSurgery {
 
+return 100000;
+
+}
+
+-(int) appearanceScore {
+
+return 100;
+
+}
+
+-(float) cost {
+
+return 0;
+
+}
+
+%end 
+
+%hook Apollo16SimCommercial 
+
+-(float) getPaymentAmount {
+
+return 25000;
+
+}
+
+-(int) successScore {
+
+return 100;
+
+}
+
+-(float) payment {
+
+return 25000;
+
+}
+
+%end
+
+%hook Apollo16DataHouseType
+
+-(bool) appreciatesInValue {
+
+return TRUE;
+
+}
+
+-(int) maxPets {
+
+return 10000000;
+
+}
+
+%end
+
+%hook Apollo16DataMurder 
+
+-(int) effectivenessScore {
+
+return 100;
+
+}
+
+%end
+
+%hook Apollo16SimPartTimeJob 
+
+-(float) hourlyRate {
+
+return 75;
+
+}
+
+-(int) heroQualification {
+
+return 100;
+
+}
+
+-(int) weeklyHours {
+
+return 8;
+
+}
+
+%end
+
+%hook Apollo16DataDrug 
+
+-(int) overdoselikelinessScore {
+
+return 0;
+
+}
+
+-(int)addictivenessScore {
+
+return 0;
+
+}
+
+-(int) HealthDamageScore {
+
+return 0;
+
+}
+
+-(bool) susceptibleToDrugTest {
+
+return FALSE;
+
+}
+
+%end
+
+%hook Apollo16SimTalkShowOpportunity 
+
+-(int) successScore {
+
+return 100;
+
+}
+
+%end
+
+%hook Apollo16SimMagazineOpportunity 
+
+-(float) getPaymentAmount {
+
+return 250000;
+
+}
+
+-(int) successScore {
+
+return 100;
+
+}
 
 %end
 
